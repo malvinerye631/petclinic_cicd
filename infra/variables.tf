@@ -175,7 +175,7 @@ variable "db_skip_final_snapshot" {
 variable "create_github_oidc_provider" {
   description = "Whether to create the GitHub Actions OIDC identity provider. Set to false if one already exists in this AWS account (only one provider per URL is allowed per account)."
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "github_org" {
